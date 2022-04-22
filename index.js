@@ -2,9 +2,14 @@
 const game = {
     canvas: undefined,
 
+    player: {
+        x: 10,
+        y: 10
+    },
+
     draw: function() {
         this.context.fillStyle = "#006400";
-        this.context.fillRect(10, 10, 10, 10);
+        this.context.fillRect(this.player.x, this.player.y, 10, 10);
     },
     
     setup: function() {
